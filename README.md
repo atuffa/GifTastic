@@ -1,4 +1,7 @@
 # GifTastic
+
+https://atuffa.github.io/GifTastic/.
+
 Project for GIPHY API to make a dynamic web page 
 
 -------------------------------------------------------------------------------------------------
