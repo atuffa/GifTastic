@@ -1,0 +1,17 @@
+body{
+    background-color:lightgrey;
+}
+#animalbuttons{
+    margin-bottom: 30px;
+}
+button{
+    margin:5px ;
+}
+img{
+    margin-top:5px;
+    
+}
+a{
+    height:26px;
+    margin-top:30px;
+}
