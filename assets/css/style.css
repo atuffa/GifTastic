@@ -25,7 +25,13 @@ input{
 form{
     margin-bottom:10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+    img{
+        width:240px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 767px) {
     img{
         width:300px;
         height: 300px;
