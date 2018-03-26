@@ -74,7 +74,7 @@ $(document).ready(function(){
                     images =`<div class="panel panel-primary col-md-4 col-sm-4 col-xs-6">
                                 <img class="staticImage img-circle col-md-12 " data-name="${j}" src="${response.data[j].images[x].url}" alt="${animalName}" width="250px" height="250px">
                                 <h3 class="col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3"><span class="label label-primary">${response.data[j].rating}</span></h3>
-                                <a class="button col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3" href="${response.data[j].images[x].url}" download="${animalName}.jpg"><span class="glyphicon glyphicon-download-alt"></span></a>
+                                <a class="button col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3" href="${animalName}" download="${animalName}.jpg"><span class="glyphicon glyphicon-download-alt"></span></a>
                             </div>`
                     $("#animals").append(images);
                     
