@@ -41,14 +41,17 @@ $(document).ready(function(){
         // // Setting a storage session for every animal added
         // sessionStorage.setItem("topic", topic);
         //Store in client
-      sessionStorage.setItem("topic-" + toDoCount, topic)
-      // Add a tracker to client
-      sessionStorage.setItem('count', toDoCount)
-      toDoCount++;
-        // console.log(topic);  
-        topics.push(topic);
-        renderButtons();
+        if (topic!==""){
+            
+            sessionStorage.setItem("topic-" + toDoCount, topic)
+            // Add a tracker to client
+            sessionStorage.setItem('count', toDoCount)
+            toDoCount++;
+                // console.log(topic);  
+            topics.push(topic);
+            renderButtons();
 
+        }
     });
 
     
@@ -76,6 +79,7 @@ $(document).ready(function(){
                                 <h3 class="col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3"><span class="label label-primary">${response.data[j].rating}</span></h3>
                                 <a class="button col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-3" href="${response.data[j].images[x].url}" download="${animalName}.jpg"><span class="glyphicon glyphicon-download-alt"></span></a>
                             </div>`
+                            console.log(animalName)
                     $("#animals").append(images);
                     
                 }
